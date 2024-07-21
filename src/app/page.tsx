@@ -39,39 +39,39 @@ export default function Home() {
       </section>
 
       <section id="product" className="">
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-2 items-center">
           <div className="">
-            <p className="uppercase">MSICS&apos;S PRODUCTS</p>
-            <h2 className={` ${livvic.className}  ${livvic.className} font-medium text-[2.5rem] `}>MSX-6 - An Innovative Psilocybin Drug</h2>
-            <p className="">MSICS is operating an innovative GMP production facility producing MSX-6 - MSICS&apos;s naturally-sourced Psilocybin-based product used in trials with esteemed hospitals to treat TRD, OCD, anxiety and anorexia.</p>
+            <p className="uppercase font-medium text-3xl mb-8">MSICS&apos;S PRODUCTS</p>
+            <h2 className={` ${livvic.className}  ${livvic.className} font-medium text-[2.3rem] leading-[3rem] -ml-[0.12rem]`}>MSX-6 - An Innovative Psilocybin Drug</h2>
+            <p className="w-[90%] mt-4">MSICS is operating an innovative GMP production facility producing MSX-6 - MSICS&apos;s naturally-sourced Psilocybin-based product used in trials with esteemed hospitals to treat TRD, OCD, anxiety and anorexia.</p>
           </div>
-          <div className="flex flex-col w-full">
-            <div className="rounded-[2rem] w-full">
+          <div className="flex flex-col w-full gap-12">
+            <div className="w-full">
               <Image 
                 width={100}
                 height={100}
                 src={ManinLabd}
                 alt="A man in lab testing psilocybin"
-                className="w-full"
+                className="w-full rounded-[2.5rem]"
               />
             </div>
-            <div className="w-full">
-              <div className="rounded-[2rem] w-full">
+            <div className="w-full flex justify-between">
+              <div className="w-[45%]">
                 <Image 
                   width={100}
                   height={100}
                   src={PhialBottle}
                   alt="A man in lab testing psilocybin"
-                  className="w-full"
+                  className="w-full rounded-[2rem]"
                 />
               </div>
-              <div className="rounded-[2rem] w-full">
+              <div className="w-[45%]">
                 <Image 
                   width={100}
                   height={100}
                   src={Psilocybin}
                   alt="A man in lab testing psilocybin"
-                  className="w-full"
+                  className="w-full rounded-[2.5rem]"
                 />
               </div>
             </div>
