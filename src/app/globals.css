@@ -35,3 +35,9 @@ body {
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(4px);
 }
+
+.glassy-blue {
+  background: rgba(3, 91, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+
