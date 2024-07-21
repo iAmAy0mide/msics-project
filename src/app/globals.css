@@ -20,9 +20,18 @@ body {
   min-height: 100vh;
 }
 
+.main-heading {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 @media (max-width: 420px) {
   .mobile {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.glassy-white {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
 }
