@@ -1,6 +1,9 @@
 import Image from "next/image";
 import mushroom from "/public/mushroom.svg";
 import ManOnLabBed from "/public/man-on-lab-bed.svg"
+import ManinLabd from "/public/man-in-lab.svg";
+import Psilocybin from "/public/processed-psilocybin.svg";
+import PhialBottle from "/public/phial-bottle.svg";
 import { Livvic } from "next/font/google";
 
 const livvic = Livvic({
@@ -18,7 +21,7 @@ export default function Home() {
         </div>
         <div className="md:max-w-[640px] md:w-[635px]">
           <Image 
-            className="w-full rounded-[30px]"
+            className="w-full rounded-[2rem]"
             src={mushroom}
             width={100}
             height={100}
@@ -26,11 +29,53 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="w-full my-16 h-[700px] mx-auto rounded-[30px]" style={{ backgroundImage: `url(${ManOnLabBed.src})`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
+
+      <section id="mission" className="w-full my-16 h-[700px] mx-auto rounded-[2rem]" style={{ backgroundImage: `url(${ManOnLabBed.src})`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
         <div className="w-full place-items-center flex flex-col space-y-6 pt-8 text-[#fff]">
           <p className="font-medium text-md uppercase">A new era of medicine</p>
-          <h2 className={` ${livvic.className} font-medium text-[40px] `}>MSICS&apos;s mission</h2>
+          <h2 className={` ${livvic.className} font-medium text-[2.5rem] `}>MSICS&apos;s mission</h2>
           <p className="w-[70%] text-pretty text-center">To revolutionize global mental healthcare, we harness the power of naturally sourced psilocybin, creating innovative products to effectively address the world&apos;s health challenges.</p>
+        </div>
+      </section>
+
+      <section id="product" className="">
+        <div className="grid md:grid-cols-2">
+          <div className="">
+            <p className="uppercase">MSICS&apos;S PRODUCTS</p>
+            <h2 className={` ${livvic.className}  ${livvic.className} font-medium text-[2.5rem] `}>MSX-6 - An Innovative Psilocybin Drug</h2>
+            <p className="">MSICS is operating an innovative GMP production facility producing MSX-6 - MSICS&apos;s naturally-sourced Psilocybin-based product used in trials with esteemed hospitals to treat TRD, OCD, anxiety and anorexia.</p>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="rounded-[2rem] w-full">
+              <Image 
+                width={100}
+                height={100}
+                src={ManinLabd}
+                alt="A man in lab testing psilocybin"
+                className="w-full"
+              />
+            </div>
+            <div className="w-full">
+              <div className="rounded-[2rem] w-full">
+                <Image 
+                  width={100}
+                  height={100}
+                  src={PhialBottle}
+                  alt="A man in lab testing psilocybin"
+                  className="w-full"
+                />
+              </div>
+              <div className="rounded-[2rem] w-full">
+                <Image 
+                  width={100}
+                  height={100}
+                  src={Psilocybin}
+                  alt="A man in lab testing psilocybin"
+                  className="w-full"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       
