@@ -17,5 +17,12 @@
 } */
 
 body {
-  
+
+}
+
+@media (max-width: 420px) {
+  .mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
