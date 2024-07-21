@@ -15,7 +15,7 @@ const NavBar = () => {
            src={Logo}
           />
         </Link>
-        <div className="flex space-x-16">
+        <div className="flex space-x-16 pt-[10px]">
           <Link 
             href="#mission"
             className=''
