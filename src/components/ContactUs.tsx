@@ -35,7 +35,7 @@ const ContactUs = ({fontStyle}: Contact) => {
     }
 
   return (
-    <form className='flex flex-col' onSubmit={handleSubmit}>
+    <form className='flex flex-col md:w-[90%]' onSubmit={handleSubmit}>
       <div className="relative h-16">
         <label htmlFor="name" className="absolute h-full bg-[#ccc] px-4 flex items-center justify-center w-24">
             <div className={`${fontStyle.className} font-medium text-[1.2rem]`}>Name</div>
