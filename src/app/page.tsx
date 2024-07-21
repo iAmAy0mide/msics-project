@@ -7,6 +7,7 @@ import PhialBottle from "/public/phial-bottle.svg";
 import Logo from "/public/Logo.svg";
 import GrayBg from "/public/gray-bg.png";
 import GrainTexture from "/public/grains-texture.png";
+import ContactUs from "@/components/ContactUs";
 import { Livvic } from "next/font/google";
 
 const livvic = Livvic({
@@ -114,6 +115,16 @@ export default function Home() {
               className="w-full"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-2 mobile px-8 md:px-12 mx-auto mb-16">
+        <div className="flex flex-col">
+          <h2 className={` ${livvic.className} mb-8 font-medium text-[2.3rem]`}>Contact Us</h2>
+          <ContactUs fontStyle={livvic} />
+        </div>
+        <div className="">
+          <h3 className={`${livvic.className} font-medium text-[2rem]`}>Investor Contact</h3>
         </div>
       </section>
       
