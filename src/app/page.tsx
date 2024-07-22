@@ -122,7 +122,7 @@ export default function Home() {
       <section id="contact" className="grid lg:grid-cols-2 mobile px-8 md:px-12 mx-auto mb-16 md:mt-8">
         <div className="flex flex-col">
           <h2 className={` ${livvic.className} mb-8 font-medium text-[2rem] leading-[2.1rem] lg:text-[2.5rem] lg:leading-[2.5rem]`}>Contact Us</h2>
-          <ContactUs fontStyle={livvic} />
+          <ContactUs fontStyle = {livvic} />
         </div>
         <div className="mt-3 lg:mt-0">
           <h3 className={`${livvic.className} font-medium text-[1.5rem]`}>Investor Contact</h3>
