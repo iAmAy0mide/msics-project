@@ -15,22 +15,22 @@ const NavBar = () => {
            src={Logo}
           />
         </Link>
-        <div className="flex space-x-16 pt-[10px]">
+        <div className="flex space-x-16 pt-[10px] ">
           <Link 
             href="#mission"
-            className=''
+            className='hidden md:block'
              >
               Mission
           </Link>
           <Link 
             href="#product"
-            className=''
+            className='hidden md:block'
              >
               Product
           </Link>
           <Link 
             href="#contact"
-            className=''
+            className='hidden md:block'
              >
               Contact
           </Link>

@@ -5,10 +5,11 @@ import ManinLabd from "/public/man-in-lab.svg";
 import Psilocybin from "/public/processed-psilocybin.svg";
 import PhialBottle from "/public/phial-bottle.svg";
 import Logo from "/public/Logo.svg";
-import GrayBg from "/public/gray-bg.png";
 import GrainTexture from "/public/grains-texture.png";
+import ph from "/public/logo.png"
 import ContactUs from "@/components/ContactUs";
 import { Livvic } from "next/font/google";
+import Link from "next/link";
 
 const livvic = Livvic({
   subsets: ["latin"],
@@ -125,6 +126,18 @@ export default function Home() {
         </div>
         <div className="">
           <h3 className={`${livvic.className} font-medium text-[2rem]`}>Investor Contact</h3>
+          <div className="flex items-center justify-between w-[45%] mt-12">
+            <div className="bg-[#ccc] w-16 rounded-full p-2 flex items-center justify-center">
+              <Image 
+                  width={100}
+                  height={100}
+                  src={ph}
+                  alt="Email logo"
+                  className="w-8"
+                />
+            </div>
+            <Link href="" className="underline hover:no-underline">info@msicspharma.com</Link>
+          </div>
         </div>
       </section>
       
