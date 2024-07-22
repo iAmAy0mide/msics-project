@@ -15,9 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100vh;
+
 }
 
 .main-heading {
@@ -41,3 +45,7 @@ body {
   backdrop-filter: blur(4px);
 }
 
+.glassy-black {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
