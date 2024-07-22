@@ -6,8 +6,8 @@ import Psilocybin from "/public/processed-psilocybin.svg";
 import PhialBottle from "/public/phial-bottle.svg";
 import Logo from "/public/Logo.svg";
 import GrainTexture from "/public/grains-texture.png";
-import ph from "/public/logo.png"
-import ContactUs from "@/components/ContactUs";
+import Email from "/public/email-icon.svg"
+import ContactUs from "@/components/ContactUs"; 
 import { Livvic } from "next/font/google";
 import Link from "next/link";
 
@@ -19,12 +19,12 @@ const livvic = Livvic({
 export default function Home() {
   return (
     <main className="pt-24 ">
-      <section className="grid sm:grid-cols-2 items-center mobile px-8 md:px-12 mx-auto">
-        <div className="">
-          <p className="font-medium text-3xl mb-8">Psilocybin pioneers</p>
-          <h1 className={`${livvic.className} font-medium text-[50px] leading-[3rem] -ml-1`}>Developing & providing innovative naturally sourced GMP psilocybin.</h1>
+      <section className="grid md:grid-cols-2 items-center mobile px-8 md:px-12 mx-auto">
+        <div className="text-center">
+          <p className="font-medium text-xl lg:text-3xl mb-6 ">Psilocybin pioneers</p>
+          <h1 className={`${livvic.className} font-medium text-[40px] leading-[2.5rem] lg:text-[50px] lg:leading-[3rem] -ml-1 mb-4 `}>Developing & providing innovative naturally sourced GMP psilocybin.</h1>
         </div>
-        <div className="md:max-w-[640px] md:w-[635px]">
+        <div className="md:max-w-[640px]">
           <Image 
             className="w-full rounded-[2rem]"
             src={mushroom}
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 mobile px-8 md:px-12 mx-auto mb-16">
+      <section className="grid md:grid-cols-2 mobile px-8 md:px-12 mx-auto mb-16">
         <div className="flex flex-col">
           <h2 className={` ${livvic.className} mb-8 font-medium text-[2.3rem]`}>Contact Us</h2>
           <ContactUs fontStyle={livvic} />
@@ -131,7 +131,7 @@ export default function Home() {
               <Image 
                   width={100}
                   height={100}
-                  src={ph}
+                  src={Email}
                   alt="Email logo"
                   className="w-8"
                 />
